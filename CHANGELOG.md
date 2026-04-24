@@ -45,3 +45,7 @@
   -  Horas filtradas en 00:00. horas_00.csv
   -  Fechas filtradas en 1932-01-01. fecha_1932.csv
 - Guardamos el dataset final en urban_flow/data/processed/speeding_fines.csv
+## Día 6
+- Calculamos el porcentaje que representa la cantidad de multas con horas en 00 sobre el total de registros.
+- Calculamos el porcentaje que representa la cantidad de multas con fecha 1932-01-01 sobre el total de registros.
+- Reutilizamos datasets intermedios de horas y fecha ya filtrados.
