@@ -21,3 +21,15 @@
 - Crear la columna exceso_velocidad y calcularla.
 - Eliminar las filas que no cometieron infracciones según el exceso de velocidad.
 - Guardar el dataset limpio en urban_flow/data/interim/speeding_fines.csv
+## Día 4
+
+- Control del dataset antes de comenzar a analizarlo. Para evitar errores al momento de usar la clase FineAnalyzer.
+- Revisar que estén las columnas a analizar, que no haya nulos y los tipos de datos.
+- El DataFrame utilizado es el que se ha normalizado y limpiado en los puntos anteriores
+- Se define la clase FineAnalyzer y se encapsula para evitar acceso externos
+- Se crean siguientes métodos y se invocan cada uno de ellos para el análisis de datos
+    - Ranking de las patentes más multadas (top 5). Debe retornar un DataFrame ordenado de mayor a menor y el índice debe comenzar desde 1, con las columnas de patentes y cantidad..
+    - Ranking de los horarios donde se producen más multas (top 5). Debe retornar un DataFrame ordenado de mayor a menor y el índice debe comenzar desde 1, con las columnas de hora y cantidad.
+    - Exceso promedio de velocidad. Debe retorna un flotante.
+    - Exceso real promedio de velocidad . Debe retorna un flotante.
+    - Contabilizar la cantidad de multas por cada ubicación. Debe retornar un DataFrame ordenado por ubicación mostrando la ubicación y la cantidad.
