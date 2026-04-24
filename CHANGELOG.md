@@ -49,3 +49,5 @@
 - Calculamos el porcentaje que representa la cantidad de multas con horas en 00 sobre el total de registros.
 - Calculamos el porcentaje que representa la cantidad de multas con fecha 1932-01-01 sobre el total de registros.
 - Reutilizamos datasets intermedios de horas y fecha ya filtrados.
+## Día 7
+- Escribimos la Conclusión y la guardamos en urban_flow/data/README.md
