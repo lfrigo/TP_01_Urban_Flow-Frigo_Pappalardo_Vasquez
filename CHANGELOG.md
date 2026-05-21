@@ -48,3 +48,12 @@
   `ratio`.
 - Dataset final guardado en
   `urban_flow/data/processed/speeding_fines_image.csv`.
+# CHANGELOG
+
+## Día 5 - Métricas del dataset final
+Se calculan métricas finales del dataset:
+- Cantidad de multas sin imágenes según la columna `exceso_velocidad`.
+- Cantidad de multas con imágenes según la columna `exceso_velocidad`.
+- Cantidad de imágenes que no tuvieron match con el dataset.
+- Cantidad de multas pendientes de pago.
+- Cantidad de multas pendientes de pago con imágenes relacionadas.
