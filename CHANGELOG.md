@@ -57,3 +57,6 @@ Se calculan métricas finales del dataset:
 - Cantidad de imágenes que no tuvieron match con el dataset.
 - Cantidad de multas pendientes de pago.
 - Cantidad de multas pendientes de pago con imágenes relacionadas.
+# CHANGELOG
+
+## Día 6 - Conclusión
