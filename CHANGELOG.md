@@ -23,3 +23,12 @@
 - Creación de Diccionario `group_images` con campos `filename`, `width`, `height`, `area`, `path` y `patent`.
 - Función reutilizable `mostrar_imagenes` que muestra
   8 imágenes aleatorias.
+# CHANGELOG
+
+## Día 3 - Procesamiento de imágenes
+- Conversión a escala de grises de las imágenes originales y guardado
+  en el directorio `urban_flow/data/interim/imgs/03_01_gray_scale/`.
+- Suavizado (Blur) sobre las imágenes en escala de grises y
+  guardado en `urban_flow/data/interim/imgs/03_02_blur/}`.
+- Detección de bordes (Canny) sobre las imágenes suavizadas y guardado
+  en `urban_flow/data/interim/imgs/03_03_canny/`.
