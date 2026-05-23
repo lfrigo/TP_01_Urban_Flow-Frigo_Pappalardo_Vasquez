@@ -32,3 +32,19 @@
   guardado en `urban_flow/data/interim/imgs/03_02_blur/}`.
 - Detección de bordes (Canny) sobre las imágenes suavizadas y guardado
   en `urban_flow/data/interim/imgs/03_03_canny/`.
+# CHANGELOG
+
+## Día 4 - Extracción de información visual (OCR)
+- Instalación de `EasyOCR` para reconocimiento de texto desde imágenes.
+- Función `extraer_patente` que devuelve la patente detectada en la imagen mediante la librería EasyOCR.
+- Actualización del diccionario `group_images` con la patente
+  detectada en el campo `patent` y actualización del archivo JSON.
+- Función `calcular_ratio` donde implementamos la librería
+  `difflib.SequenceMatcher` para medir coincidencia entre patentes con lectura de izquierda a derecha.
+- Cruce entre las patentes detectadas y el dataset
+  `urban_flow/data/interim/speeding_fines.csv` con umbral de
+  coincidencia del 80%.
+- Nuevas columnas en el dataframe: `imagen`, `patente_imagen`,
+  `ratio`.
+- Dataset final guardado en
+  `urban_flow/data/processed/speeding_fines_image.csv`.
