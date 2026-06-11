@@ -27,3 +27,7 @@
 - Mapeo de filas del CSV a objetos del dominio (procesar_fila_csv).
 - Migración de los datos desde el CSV y validación de registros insertados.
 - Versionado de la base de datos relacional con DVC.
+## Día 7 - Sprint 3
+- Consultas sobre la base de datos transito con el ORM de SQLAlchemy:
+  top 10 patentes, multas sin evidencia, radares más activos,
+  reincidentes por período y porcentaje de confirmación visual.
