@@ -31,3 +31,8 @@
 - Consultas sobre la base de datos transito con el ORM de SQLAlchemy:
   top 10 patentes, multas sin evidencia, radares más activos,
   reincidentes por período y porcentaje de confirmación visual.
+## Día 8 - Sprint 3
+- Creación de la base de datos vectorial patente_vectorial con ChromaDB y OpenCLIP.
+- Almacenamiento del id del vehículo junto al vector de su imagen.
+- Desarrollo del script de búsqueda por aproximación (búsqueda vectorial) para la identificación de vehículos.
+- Versionado de la base vectorial con DVC.
