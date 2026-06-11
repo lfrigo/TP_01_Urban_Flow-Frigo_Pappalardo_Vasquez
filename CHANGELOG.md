@@ -36,3 +36,7 @@
 - Almacenamiento del id del vehículo junto al vector de su imagen.
 - Desarrollo del script de búsqueda por aproximación (búsqueda vectorial) para la identificación de vehículos.
 - Versionado de la base vectorial con DVC.
+## Día 9 - Sprint 3
+- Implementación de la función principal `buscar_patente_imagen`.
+- Configuración de la función para procesar una imagen de entrada, generar su vector de características y realizar la búsqueda por aproximación en la base vectorial.
+- Integración de la consulta con la base de datos relacional para recuperar y retornar la totalidad de los datos del vehículo identificado.
