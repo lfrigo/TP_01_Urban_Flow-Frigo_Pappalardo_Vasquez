@@ -11,3 +11,7 @@
 - Identificación y definición de los atributos conceptuales para las entidades: Vehiculo, Multa, Radar y Evidencia.
 - Establecimiento de relaciones conceptuales independientes del motor de base de datos (Vehículo-Multa 1:N, Multa-Evidencia 1:1 opcional, Radar-Multa 1:N).
 - Definicion de las Clases del modelo lógico.
+## Día 4 - Sprint 3
+- Implementación de la función `procesar_fila_csv` para la lectura de datos estructurados.
+- Mapeo y transformación de registros tipo diccionario provenientes del CSV hacia las Clases lógicas definidas.
+- Validamos la función `procesar_fila_csv`.
