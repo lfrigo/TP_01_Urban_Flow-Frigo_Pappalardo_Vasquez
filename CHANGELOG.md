@@ -15,3 +15,8 @@
 - Implementación de la función `procesar_fila_csv` para la lectura de datos estructurados.
 - Mapeo y transformación de registros tipo diccionario provenientes del CSV hacia las Clases lógicas definidas.
 - Validamos la función `procesar_fila_csv`.
+## Día 5 - Sprint 3
+- Diseño del modelo relacional en base al modelo de datos del ejercicio anterior.
+- Implementación de los modelos utilizando el ORM de SQLAlchemy.
+- Configuración de claves primarias y definición de relaciones entre tablas.
+- Sobrescritura del método `__repr__` en cada modelo para mejorar la legibilidad del código.
