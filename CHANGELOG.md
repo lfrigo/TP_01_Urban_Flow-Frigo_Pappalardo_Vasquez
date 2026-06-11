@@ -6,3 +6,8 @@
 - Creación del remote local de DVC en /content/remote_dvc.
 - Migración de los archivos binarios de git a DVC.
 - Subida de los binarios al remote de DVC.
+## Día 3 - Sprint 3
+- Diseño del modelo lógico de datos basado en el archivo data/processed/speeding_fines_image.csv.
+- Identificación y definición de los atributos conceptuales para las entidades: Vehiculo, Multa, Radar y Evidencia.
+- Establecimiento de relaciones conceptuales independientes del motor de base de datos (Vehículo-Multa 1:N, Multa-Evidencia 1:1 opcional, Radar-Multa 1:N).
+- Definicion de las Clases del modelo lógico.
