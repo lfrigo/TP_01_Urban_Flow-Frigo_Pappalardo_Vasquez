@@ -1,17 +1,19 @@
-## Conclusión:
-Se identifica que el Dataset original presentaba importantes problemas en la calidad de datos, ya que se trataba de un Dataset con datos Heredados.
 
-Se pueden mencionar los siguientes inconvenientes encontrados en los datos: diferentes tipos de formatos en la fecha y en la hora, como también valores inválidos; errores en las patentes por su no existencia o con caracteres que fueran difíciles de identificar; también registros incompletos con valores nulos en datos relevantes para la identificación de la multa.
+## Conclusión - Sprint 3
+En este sprint se profesionalizó la solución migrando los datos procesados a
+una base de datos relacional gestionada con el ORM de SQLAlchemy. Se diseñó un
+modelo lógico de dominio (Vehiculo, Multa, Radar y Evidencia) y su modelo
+relacional correspondiente, respetando las relaciones uno a muchos entre
+vehículo/radar y multas, y la relación opcional uno a uno entre multa y
+evidencia.
 
-Para poder realizar un análisis estadístico, se realizó una normalización del Dataset:
-- Las “fechas” se llevaron todas al formato YYYY-MM-DD y las inválidas a la fecha ‘1932-01-01’.
-- Las “horas” se convirtieron al formato de 24hs y a las inválidas se les asignó “’00:00”
-- En “patentes” y “ubicación” se convirtieron a mayúsculas quitando caracteres especiales.
-- En caso de patentes erróneas se completaron los datos con “No disponible”.
-- Se descartaron los registros que no representan infracciones reales según el 5% de tolerancia sobre la velocidad máxima permitida.
+Sobre esa base se implementaron consultas que responden preguntas de negocio
+(patentes más multadas, radares más activos, reincidencia por período y
+porcentaje de confirmación visual). Además, se integró una base de datos
+vectorial (ChromaDB con OpenCLIP) que permite identificar un vehículo a partir
+de la imagen de su patente por similitud, vinculando así el dato visual con el
+dato estructurado.
 
-A través del análisis estadístico se puede observar patrones de comportamiento de los conductores, como el caso que una patente “WEFLYN” es la que tiene alrededor de 40 multas o que la hora de mayores multas es 00:00hs (caso que se explicará más adelante) seguida por las 09:04 o que el mes de mayor incidencia de multas es Enero.
-
-Sin embargo, se detectó que este análisis estadístico tiene anomalías, ya que la fecha 1932-01-01 (Enero) y la hora 00:00, no necesariamente reflejan un comportamiento real de los conductores, sino que son consecuencia del mismo proceso de limpieza y normalización.
-
-Se puede concluir que el proceso de preparación y limpieza de datos es la etapa crítica que puede alterar la interpretación de los resultados. Si bien el archivo creado a partir de la limpieza y normalización de los datos sería apto para el nuevo sistema, tanto la fecha del 01/01/1932 y la hora 00:00 nos indican una pérdida de información notoria. De todas maneras, se puede identificar quienes son los infractores más frecuentes, sin importar la fecha y la hora de la infracción realizada.
+Finalmente, se incorporó el versionado de datos con DVC, separando los archivos
+binarios (gráficos y bases de datos) del control de versiones de git, lo que
+deja el proyecto preparado para escalar en volumen y para búsquedas avanzadas.

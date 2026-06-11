@@ -40,3 +40,7 @@
 - Implementación de la función principal `buscar_patente_imagen`.
 - Configuración de la función para procesar una imagen de entrada, generar su vector de características y realizar la búsqueda por aproximación en la base vectorial.
 - Integración de la consulta con la base de datos relacional para recuperar y retornar la totalidad de los datos del vehículo identificado.
+## Día 10 - Sprint 3
+- Redacción de la conclusión y análisis del proyecto integrador.
+- Análisis del trabajo desarrollado, destacando la sinergia entre bases de datos relacionales y vectoriales.
+- Evaluación del impacto del ORM SQLAlchemy, BD Vectorial ChromaDB y los modelos de Embeddings (OpenClip) en la resolución de problemas de analítica y reconocimiento visual de tránsito.
