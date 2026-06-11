@@ -20,3 +20,10 @@
 - Implementación de los modelos utilizando el ORM de SQLAlchemy.
 - Configuración de claves primarias y definición de relaciones entre tablas.
 - Sobrescritura del método `__repr__` en cada modelo para mejorar la legibilidad del código.
+## Día 6 - Sprint 6
+- Configuración de la ruta del Dataset.
+- Creación y configuración de la base de datos `transito` utilizando SQLAlchemy.
+- Automatización de la creación de tablas a partir de los modelos definidos previamente.
+- Mapeo de filas del CSV a objetos del dominio (procesar_fila_csv).
+- Migración de los datos desde el CSV y validación de registros insertados.
+- Versionado de la base de datos relacional con DVC.
